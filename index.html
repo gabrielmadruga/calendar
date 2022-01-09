@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:regular,bold' rel='stylesheet' type='text/css'>
+  <script defer src="script.js"></script>  
+</head>
+
+<body>
+
+  <!-- <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F96c7a7da-a64f-4b2c-9d1a-91905b515da9%2Fcalendar-screenshot.png?table=block&id=f686e8bc-b678-4525-b044-7ccc2dcd1399&spaceId=7032364b-5d08-4018-98ef-c54e01ac295c&width=2000&userId=49074ff3-dd99-4aee-80ad-be1c1976e8e3&cache=v2"></img> -->
+
+  <div class="calendar">
+
+    <div class="calendar__header">
+      <text alignment-baseline="baseline">
+        <span class="calendar__month"></span>
+        <span class="calendar__year"></span>
+      </text>
+      
+    </div>
+    
+    <div class="calendar__left">
+      <button type="button" class="calendar__arrow">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.9524 7.5L20 0V5.5L15.7143 9V11L20 14.5V20L10.9524 12.5V7.5Z" fill="white" />
+          <path d="M-5.96046e-08 7.5L9.04762 2.6226e-06V5.5L4.7619 9V11L9.04762 14.5V20L-5.96046e-08 12.5V7.5Z"
+            fill="white" />
+        </svg>
+      </button>      
+    </div>
+    
+    <div class="calendar__grid-border">
+      <div class="calendar__grid">
+        <div class="calendar__weekdays">
+          <span>S</span>
+          <span>M</span>
+          <span>T</span>
+          <span>W</span>
+          <span>T</span>
+          <span>F</span>
+          <span>S</span>
+        </div>
+        <div class="calendar__days"></div>
+      </div>
+    </div>
+    
+    
+    <div class="calendar__right">
+      <button type="button" class="calendar__arrow">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.04762 7.5L0 0V5.5L4.28571 9V11L0 14.5V20L9.04762 12.5V7.5Z" fill="white" />
+          <path d="M20 7.5L10.9524 2.6226e-06V5.5L15.2381 9V11L10.9524 14.5V20L20 12.5V7.5Z" fill="white" />
+        </svg>
+      </button>
+    </div>
+    
+  </div>
+
+
+</body>
+
+</html>
